@@ -22,8 +22,12 @@ fwga(n.pop = 200, n.iter = 100,
   \item{damp.fact}{ Amount by which to dampen the mutation rates in each iteration}
 }
 \details{
-  This is the main genetic-algorithm function. Default settings should work for many situations but
+  This is the main genetic-algorithm function and is designed to minimize the chosen fitness functions. If maximization is required, the fitness functions must be multiplied by minus one; it is easiest to do this in the function definition (see \code{\link{fit_robust}}).
+  
+  Default settings should work for many situations but
   damp.fact and n.iter are the two most useful parameters to change.
+  
+  Convergence is not guaranteed using this genetic algorithm. A simple method for determining convergence is to plot fitness against iterations. Obvious tapering-off of the fitness functions suggest, but do not guarantee, convergence. See below for an example of this plot.
 }
 \value{
 List of outputs from the genetic algorithm
@@ -42,5 +46,8 @@ List of outputs from the genetic algorithm
 }
 
 \examples{
-  sim.fws <- fwga(n.iter=5, suggest=matrix(ifelse(runif(100) > 0.7, 1, 0), ncol=10))
+  # run the genetic algorithm with the default fitness functions
+  sim.fws <- fwga(n.iter=100, suggest=matrix(ifelse(runif(100) > 0.7, 1, 0), ncol=10))
+  # plot fitness against iterations for the first (of two) fitness functions to assess convergence
+  plot(sim.fws$fitness[[1]][, 1], type='l', bty='l', xlab="Iteration", ylab="Fitness")
 }

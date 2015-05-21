@@ -1,7 +1,7 @@
-# Genetic algorithms for simulating optial food web structures (fwga)
+# Genetic algorithms for simulating optimal food web structures (fwga)
 
 This README is for the R package fwga (food web genetic algorithms) (see also
-Yen JDL, et al. (in review) Highly connected food webs maximize robustness but not ecosystem throughput).
+Yen JDL, et al., Highly connected food webs maximize robustness but not ecosystem throughput, in review).
 
 Copyright &copy; 2015, Jian Yen
 
@@ -39,7 +39,7 @@ fwga is distributed as an R package (in source form) but is not currently availa
 
 Download the file fwga_x.x.tar.gz into a local directory on your computer (replace x.x with the current version).
 
-Because fwga is installed from source you will also need an appropriate C and C++ compiler installed. Easily installed options are [gcc](https://github.com/kennethreitz/osx-gcc-installer/) (OSX users) and [Rtools](https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows) (Windows users). If you're unsure of whether you need to install a C/C++ compiler, you can try installing the FREE package anyway; if you do not get any errors then no compiler is needed.
+Because fwga is installed from source you will also need an appropriate C and C++ compiler installed. Easily installed options are [gcc](https://github.com/kennethreitz/osx-gcc-installer/) (OSX users) and [Rtools](https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows) (Windows users). If you're unsure of whether you need to install a C/C++ compiler, you can try installing the fwga package anyway; if you do not get any errors then no compiler is needed.
 
 fwga imports functions from several packages (see Depends and Imports in the DESCRIPTION file) and these packages must be installed for fwga to install and load correctly. All packages are available through the CRAN and should be easy to install.
 
