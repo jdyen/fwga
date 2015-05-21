@@ -1,0 +1,11 @@
+Package: fwga
+Type: Package
+Title: Genetic algorithms for food webs
+Version: 1.0
+Date: 2015-05-21
+Author: Jian Yen, Mauricio Cantor
+Maintainer: Jian Yen <jdl.yen@gmail.com>
+Description: Genetic algorithms for optimising food webs according to a user-defined fitness function.
+License: GPL-3
+Depends: vegan, igraph, NetIndices
+Imports: sna, tnet, reshape2
