@@ -44,7 +44,7 @@ fwga imports functions from several packages (see Depends and Imports in the DES
 Download the file fwga_x.x.tgz into a local directory on your computer (replace x.x with the current version).
 Place the file fwga_x.x.tgz in the current working directory (where x.x is replaced with the current version number) and type
 ```
-install.packages("fwga_x.x.tgz", repos=NULL, type="binary")
+install.packages("fwga_x.x.tgz", repos=NULL)
 ```
 into the R console to install the fwga R package. This package then can be loaded in R using `library(fwga)`.
 
@@ -52,7 +52,7 @@ into the R console to install the fwga R package. This package then can be loade
 Download the file fwga_x.x.zip into a local directory on your computer (replace x.x with the current version).
 Place the file fwga_x.x.zip in the current working directory (where x.x is replaced with the current version number) and type
 ```
-install.packages("fwga_x.x.zip", repos=NULL, type="binary")
+install.packages("fwga_x.x.zip", repos=NULL)
 ```
 into the R console to install the fwga R package. This package then can be loaded in R using `library(fwga)`.
 
