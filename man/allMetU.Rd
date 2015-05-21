@@ -39,13 +39,16 @@ List of metric values.
   Yen JDL et al. (in review) Highly connected food webs maximize robustness but not ecosystem throughput.
 }
 \author{
-  Jian Yen
-  Mauricio Cantor
+  Jian Yen and Mauricio Cantor
 }
-
 \examples{
-  sim.fws <- fwga(n.iter=5, suggest=matrix(ifelse(runif(100) > 0.7, 1, 0), ncol=10))
+  # simulate food webs using the genetic algorithm and default settings
+  sim.fws <- fwga(n.iter=5, suggest=matrix(ifelse(runif(100) > 0.7, 1, 0),
+                                           ncol=10))
+  # convert to a binary food web
   fw.out <- lapply(sim.fws$pops, function(x) ifelse(x > 0, 1, 0))
+  # remove cannibalism from the food web
   fw.out <- lapply(fw.out, function(x) {diag(x) <- 0; return(x)})
+  # calculate summary metrics for the food web
   out.met <- lapply(fw.out, allMetU)
 }

@@ -25,4 +25,7 @@
   "Opsahl et al 2008 Physical review letters 101, 168702";
   "Bascompte et al. 2005. PNAS"
 }
-
+\seealso{
+  \code{\link{null2}}, \code{\link{null3}}, \code{\link{null4_7}},
+  \code{\link{mgen}}
+}

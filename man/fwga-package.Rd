@@ -17,11 +17,11 @@ Date: \tab 2015-05-21\cr
 License: \tab GPL-3\cr
 }
 Email <jdl.yen@gmail.com>}
-\author{
-Jian Yen
-Mauricio Cantor
 
-Maintainer: Jian Yen <jdl.yen@gmail.com>
+\author{
+  Jian Yen and Mauricio Cantor
+
+  Maintainer: Jian Yen <jdl.yen@gmail.com>
 }
 \references{
   Yen JDL et al. (in review) Highly connected food webs maximize robustness but not ecosystem throughput.
@@ -31,7 +31,8 @@ Maintainer: Jian Yen <jdl.yen@gmail.com>
 \examples{
   # TRIVIAL EXAMPLE - NOT ENOUGH ITERATIONS
   # run the genetic algorithm with default fitness functions and settings
-  sim.fws <- fwga(n.iter=5, suggest=matrix(ifelse(runif(100) > 0.7, 1, 0), ncol=10))
+  sim.fws <- fwga(n.iter=5, suggest=matrix(ifelse(runif(100) > 0.7, 1, 0),
+                                           ncol=10))
   # convert outputs to binary food webs
   fw.out <- lapply(sim.fws$pops, function(x) ifelse(x > 0, 1, 0))
   # remove cannibalism from the food web

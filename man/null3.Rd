@@ -25,4 +25,7 @@
 \author{
   Mauricio Cantor with modifications by Diego Barneche
 }
-
+\seealso{
+  \code{\link{null1}}, \code{\link{null2}}, \code{\link{null4_7}},
+  \code{\link{mgen}}
+}

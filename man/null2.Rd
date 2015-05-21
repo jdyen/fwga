@@ -33,4 +33,7 @@
   The nested assembly of plant-animal mutualistic networks.
   PNAS, 100(16):9383-9387"
 }
-
+\seealso{
+  \code{\link{null1}}, \code{\link{null3}}, \code{\link{null4_7}},
+  \code{\link{mgen}}
+}

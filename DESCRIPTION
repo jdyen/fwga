@@ -1,6 +1,6 @@
 Package: fwga
 Type: Package
-Title: Genetic algorithms for food webs
+Title: Food Web Genetic Algorithms
 Version: 1.0
 Date: 2015-05-21
 Author: Jian Yen, Mauricio Cantor

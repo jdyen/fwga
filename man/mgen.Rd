@@ -47,4 +47,7 @@
   multiple determinants of the structure of mutualistic
   networks. Ecology, 90:2039-2046"
 }
-
+\seealso{
+  \code{\link{null1}}, \code{\link{null2}}, \code{\link{null3}},
+  \code{\link{null4_7}}
+}

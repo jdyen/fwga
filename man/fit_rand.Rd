@@ -18,10 +18,14 @@ Returns a constant value regardless of the input matrix. This function is design
   Yen JDL et al. (in review) Highly connected food webs maximize robustness but not ecosystem throughput.
 }
 \author{
-  Jian Yen
-  Mauricio Cantor
+  Jian Yen and Mauricio Cantor
 }
-
+\seealso{
+  \code{\link{fit_se}}, \code{\link{fit_robust}}, \code{\link{fit_wtst}},
+  \code{\link{fit_tst}}
+}
 \examples{
+  # calculate constant-value fitness for a randomly
+  #  generated food web
   fit_rand(matrix(runif(100), ncol=10), S=10)
 }

@@ -17,4 +17,6 @@
 \author{
   Mauricio Cantor
 }
-
+\seealso{
+  \code{\link{mat_el}}
+}

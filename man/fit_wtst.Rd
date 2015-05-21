@@ -18,10 +18,14 @@ Returns the negative of the trophic-weighted total system throughput for a given
   Yen JDL et al. (in review) Highly connected food webs maximize robustness but not ecosystem throughput.
 }
 \author{
-  Jian Yen
-  Mauricio Cantor
+  Jian Yen and Mauricio Cantor
 }
-
+\seealso{
+  \code{\link{fit_se}}, \code{\link{fit_robust}},
+  \code{\link{fit_tst}}, \code{\link{fit_rand}}
+}
 \examples{
+  # calculate (negative) trophic-weighted throughput for a randomly
+  #  generated food web
   fit_wtst(matrix(runif(100), ncol=10), S=10)
 }

@@ -41,13 +41,19 @@ List of outputs from the genetic algorithm
   Yen JDL et al. (in review) Highly connected food webs maximize robustness but not ecosystem throughput.
 }
 \author{
-  Jian Yen
-  Mauricio Cantor
+  Jian Yen and Mauricio Cantor
+}
+\seealso{
+  \code{\link{fit_se}}, \code{\link{fit_robust}}, \code{\link{fit_wtst}},
+  \code{\link{fit_tst}}, \code{\link{fit_rand}}
 }
 
 \examples{
   # run the genetic algorithm with the default fitness functions
-  sim.fws <- fwga(n.iter=100, suggest=matrix(ifelse(runif(100) > 0.7, 1, 0), ncol=10))
-  # plot fitness against iterations for the first (of two) fitness functions to assess convergence
-  plot(sim.fws$fitness[[1]][, 1], type='l', bty='l', xlab="Iteration", ylab="Fitness")
+  sim.fws <- fwga(n.iter=100, suggest=matrix(ifelse(runif(100) > 0.7, 1, 0),
+                                             ncol=10))
+  # plot fitness against iterations for the first
+  #  (of two) fitness functions to assess convergence
+  plot(sim.fws$fitness[[1]][, 1], type='l',
+       bty='l', xlab="Iteration", ylab="Fitness")
 }

@@ -18,10 +18,14 @@ Returns the average number of secondary extinctions for a given input food web. 
   Yen JDL et al. (in review) Highly connected food webs maximize robustness but not ecosystem throughput.
 }
 \author{
-  Jian Yen
-  Mauricio Cantor
+  Jian Yen and Mauricio Cantor
 }
-
+\seealso{
+  \code{\link{fit_robust}}, \code{\link{fit_wtst}},
+  \code{\link{fit_tst}}, \code{\link{fit_rand}}
+}
 \examples{
+  # calculate secondary extinctions for a randomly
+  #  generated food web
   fit_se(matrix(runif(100), ncol=10), S=10)
 }

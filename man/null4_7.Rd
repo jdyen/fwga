@@ -46,6 +46,7 @@
   \code{citation("vegan")}
 }
 \seealso{
-  \code{library(vegan)}
+  \code{library(vegan)}, 
+  \code{\link{null1}}, \code{\link{null2}}, \code{\link{null3}},
+  \code{\link{mgen}}
 }
-
