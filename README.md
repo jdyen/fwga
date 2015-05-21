@@ -35,13 +35,30 @@ Last updated 21 May 2015
 *****
 
 ## Installation
-fwga is distributed as an R package (in source form) but is not currently available through the CRAN. The current version of fwga has been tested only on OSX 10.10.3 but should be suitable for Windows and other Unix systems. A binary version of this package will be uploaded soon.
+fwga is distributed as an R package (in binary and source form) but is not currently available through the CRAN. The current version of fwga has been tested only on OSX 10.10.3 but should be suitable for Windows and other Unix systems. A binary has been created for OSX and Windows.
 
+fwga imports functions from several packages (see Depends and Imports in the DESCRIPTION file) and these packages must be installed for fwga to install and load correctly. All packages are available through the CRAN and should be easy to install.
+
+### Install from binary
+OSX users: Download the file fwga_x.x.tgz into a local directory on your computer (replace x.x with the current version).
+Place the file fwga_x.x.tgz in the current working directory (where x.x is replaced with the current version number) and type
+```
+install.packages("fwga_x.x.tgz", repos=NULL, type="binary")
+```
+into the R console to install the fwga R package. This package then can be loaded in R using `library(fwga)`.
+
+Windows users: Download the file fwga_x.x.zip into a local directory on your computer (replace x.x with the current version).
+Place the file fwga_x.x.zip in the current working directory (where x.x is replaced with the current version number) and type
+```
+install.packages("fwga_x.x.zip", repos=NULL, type="binary")
+```
+into the R console to install the fwga R package. This package then can be loaded in R using `library(fwga)`.
+
+
+### Install from source
 Download the file fwga_x.x.tar.gz into a local directory on your computer (replace x.x with the current version).
 
 Because fwga is installed from source you will also need an appropriate C and C++ compiler installed. Easily installed options are [gcc](https://github.com/kennethreitz/osx-gcc-installer/) (OSX users) and [Rtools](https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows) (Windows users). If you're unsure of whether you need to install a C/C++ compiler, you can try installing the fwga package anyway; if you do not get any errors then no compiler is needed.
-
-fwga imports functions from several packages (see Depends and Imports in the DESCRIPTION file) and these packages must be installed for fwga to install and load correctly. All packages are available through the CRAN and should be easy to install.
 
 Once the appropriate packages have been installed, you simply need to place the file fwga_x.x.tar.gz in the current working directory (where x.x is replaced with the current version number) and use
 ```
